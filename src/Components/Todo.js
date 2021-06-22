@@ -22,7 +22,7 @@ const Todo = ({ todos, completeToDo, removeToDo, updateToDo }) => {
     return <ToDoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
-  return todos.map((todo, index) => {
+  return todos.map((todo, index) => (
     <div 
       className={todo.isComplete ? 'todo-row complete' : 'todo-row'} 
       key={index}
@@ -31,19 +31,19 @@ const Todo = ({ todos, completeToDo, removeToDo, updateToDo }) => {
         {todo.text}
       </div>
 
-      <div className="icons">
+      <div className='icons'>
         <AiFillCloseSquare  
           onClick={() => removeToDo(todo.id)}
-          className="delete-icon"
+          className='delete-icon'
         />
         <RiEditBoxLine 
-          onClick={() => setEdit({id: todo.id, value: todo.text})}
-          className="edit-icon"
+          onClick={() => setEdit({ id: todo.id, value: todo.text })}
+          className='edit-icon'
         />
 
       </div>
     </div>
-  })
+  ));
 }
 
 export default Todo;

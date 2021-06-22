@@ -13,7 +13,7 @@ body {
     rgba(100, 115, 255, 1) 100%
   );
 }
-.todo-app {
+.App {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -135,6 +135,7 @@ h1 {
   align-items: center;
   font-size: 24px;
   cursor: pointer;
+  color: #fff;
 }
 
 .delete-icon {
