@@ -32,9 +32,24 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  color: #fff;
+  margin: 32px 0;
+}
+
 .complete {
   text-decoration: line-through;
   opacity: 0.4;
+}
+
+img.ToDoPng{
+  height: 225px;
+  width: 225px;
+}
+
+div.ToDoIconBox{
+  justify-content: center;
+  align-items: center;
 }
 
 .todo-form {

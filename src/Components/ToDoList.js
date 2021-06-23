@@ -41,8 +41,10 @@ function ToDoList() {
   };
 
   return (
+    //implement date in title and "To Do List for 6/22/21"
     <>
-      <h1> Whats on the Agenda </h1>
+    
+      <h2> Whats on the Agenda </h2>
       <ToDoForm onSubmit={addToDo} />
       <Todo 
         todos={todos}
